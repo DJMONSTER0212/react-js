@@ -1,7 +1,7 @@
 // Always write Components in capital
 import React from 'react'
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
     <div className="container-fluid">
@@ -9,13 +9,13 @@ export default function Navbar() {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a className="navbar-brand" href="/">DJ's Creation 🎮</a>
+        <a className="navbar-brand" href="/">{props.title}</a>
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
             <a className="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">About</a>
+            <a className="nav-link" href="/">{props.AboutText}</a>
           </li>
         </ul>
       </div>
