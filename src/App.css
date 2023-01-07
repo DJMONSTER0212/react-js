@@ -40,3 +40,8 @@
 .blank{
   color: red;
 }
+#mybox{
+  background: transparent;
+  color: #39ff14;
+  font-family: 'Roboto Mono', monospace;
+}
